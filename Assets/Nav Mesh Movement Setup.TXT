@@ -1,0 +1,4 @@
+1) Drag the /Assets/Code/NavMeshMoveTest script to the Character_Mesh object.
+2) <Optional>  Drag the /Assets/Destination_Sphere prefab into the scene and assign it to the NavMeshMoveTest's "Dest Sphere" component.
+3) Select the part of the ship geometry you want to make walkable and a) change it's Layer to "Floor" and b) add a collider.
+4) Re-Bake if necessary
