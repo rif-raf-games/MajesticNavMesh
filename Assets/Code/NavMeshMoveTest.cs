@@ -33,11 +33,14 @@ public class NavMeshMoveTest : MonoBehaviour
             {
                 Vector3 dest = hit.point;                
                 SetDestination(dest);
-                DestSphere.SetActive(ShowDestSphere);
-                if(ShowDestSphere == true )
+                if(DestSphere != null )
                 {
-                    DestSphere.transform.position = dest;
-                }
+                    DestSphere.SetActive(ShowDestSphere);
+                    if (ShowDestSphere == true)
+                    {
+                        DestSphere.transform.position = dest;
+                    }
+                }                
             }
         }
     }
